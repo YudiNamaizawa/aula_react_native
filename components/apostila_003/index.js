@@ -11,20 +11,48 @@ export default function Index() {
         setNumero(numero + 1)
     }
 
+    function minusNumber(){
+        setNumero(numero - 1)
+    }
+
+    function zeroNumber(){
+        setNumero(numero - numero)
+    }
+
   return(
     <View style={styles.container}>
         <Text style={styles.paragraph}>
             Exemplo 3
         </Text>  
+            <View style={styles.row}>
 
-        <Text style={styles.textCounter}>{numero}</Text>               
+                <TouchableOpacity 
+                    style={styles.button}
+                    onPress={() => addNumber()}
+                >
+                    <Text style={styles.textButton}>
+                        +1
+                    </Text>
+                </TouchableOpacity>
 
+                <Text style={styles.textCounter}>{numero}</Text>               
+
+                <TouchableOpacity 
+                    style={styles.button}
+                    onPress={() => minusNumber()}
+                >
+                    <Text style={styles.textButton}>
+                        -1
+                    </Text>
+                </TouchableOpacity>
+            </View>
+            
         <TouchableOpacity 
-            style={styles.button}
-            onPress={() => addNumber()}
+            style={styles.buttonzero}
+            onPress={() => zeroNumber()}
         >
             <Text style={styles.textButton}>
-                +1
+                Zerar
             </Text>
         </TouchableOpacity>
 

@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center', 
       backgroundColor: '#F5F5F5', 
       padding: 8, 
+      alignItems: 'center',
     }, 
     paragraph: {
       margin: 24, 
@@ -18,7 +19,18 @@ const styles = StyleSheet.create({
       backgroundColor: '#9E9E9E', 
       height: 60, 
       justifyContent: 'center', 
+      marginBottom: 10, 
+      width: 90,
     }, 
+    buttonzero :{
+      backgroundColor: '#9E9E9E',
+      height: 60,
+      justifyContent: 'center',
+      marginBottom: 10,
+      borderRadius: 30,
+      width: 250,
+      alignItems: 'center',
+    },
     textButton: {
       fontSize: 20, 
       color: '#fff', 
@@ -37,6 +49,12 @@ const styles = StyleSheet.create({
       textAlign: 'center',    
       fontWeight: 'bold', 
       padding: 8, 
+      marginLeft: 20,
+      marginRight: 20,
+    },
+    row: {
+      flexDirection: 'row',
+      justifyContent: 'center',
     }
   });
 
