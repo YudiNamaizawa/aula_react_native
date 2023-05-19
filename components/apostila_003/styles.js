@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center', 
       marginBottom: 10, 
       width: 90,
+      alignItems: 'center',
     }, 
     buttonzero :{
       backgroundColor: '#9E9E9E',
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
     counter: {
       borderWidth: 4, 
       borderColor: '#9E9E9E', 
-      padding: 8,  
+      padding: 30,  
       marginTop: 8, 
       justifyContent: 'center',
     }, 

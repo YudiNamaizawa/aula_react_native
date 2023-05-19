@@ -24,38 +24,39 @@ export default function Index() {
         <Text style={styles.paragraph}>
             Exemplo 3
         </Text>  
-            <View style={styles.row}>
+            <View style={styles.counter}>
+                <View style={styles.row}>
 
+                    <TouchableOpacity 
+                        style={styles.button}
+                        onPress={() => addNumber()}
+                    >
+                        <Text style={styles.textButton}>
+                            +1
+                        </Text>
+                    </TouchableOpacity>
+
+                    <Text style={styles.textCounter}>{numero}</Text>               
+
+                    <TouchableOpacity 
+                        style={styles.button}
+                        onPress={() => minusNumber()}
+                    >
+                        <Text style={styles.textButton}>
+                            -1
+                        </Text>
+                    </TouchableOpacity>
+                </View>
+                
                 <TouchableOpacity 
-                    style={styles.button}
-                    onPress={() => addNumber()}
+                    style={styles.buttonzero}
+                    onPress={() => zeroNumber()}
                 >
                     <Text style={styles.textButton}>
-                        +1
-                    </Text>
-                </TouchableOpacity>
-
-                <Text style={styles.textCounter}>{numero}</Text>               
-
-                <TouchableOpacity 
-                    style={styles.button}
-                    onPress={() => minusNumber()}
-                >
-                    <Text style={styles.textButton}>
-                        -1
+                        Zerar
                     </Text>
                 </TouchableOpacity>
             </View>
-            
-        <TouchableOpacity 
-            style={styles.buttonzero}
-            onPress={() => zeroNumber()}
-        >
-            <Text style={styles.textButton}>
-                Zerar
-            </Text>
-        </TouchableOpacity>
-
     </View>
   );
 }
