@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -5,15 +6,15 @@ import Constants from 'expo-constants';
 
 import Apostila_003 from './components/apostila_003';
 import Apostila_004 from './components/apostila_004';
+import Apostila_005 from './components/apostila_005';
 
-const corApp = '#000';
+const corApp = '#fff';
 
 export default function App() {
-
   return (
     <View style={styles.container}>
-      <Apostila_004/>
-      <StatusBar style={corApp === '#000'} />
+      <Apostila_005/>
+      <StatusBar style={corApp === '#000' ? 'light' : 'dark'} />
     </View>
   );
 }
