@@ -86,7 +86,7 @@ function Index() {
             </View>
 
             <TouchableOpacity style={styles.zero} onPress={() => Zerar()}>
-                <Text style={styles.textButton}> zerar </Text>
+                <Text style={styles.textButton}> Zerar </Text>
             </TouchableOpacity>
 
         </View>

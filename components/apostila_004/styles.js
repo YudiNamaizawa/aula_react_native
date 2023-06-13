@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         height: 40, 
         color: '#E53935', 
         borderRadius: 10,
-        width: '70%', 
+        width: '95%', 
     }, 
     button: {
         backgroundColor: '#E53935', 
@@ -36,13 +36,19 @@ const styles = StyleSheet.create({
         justifyContent: 'center', 
         borderRadius: 10, 
         marginTop: 20, 
-        width: '70%',   
+        width: '95%',   
     }, 
     textButton: {
         fontSize: 22, 
         color: '#FFCDD2', 
         textAlign: 'center', 
     }, 
+    txtView: {
+        fontSize: 22,
+        fontWeight: 'bold', 
+        textAlign: 'left',
+        color: '#E53935',
+    },
 })
 
 export default styles;

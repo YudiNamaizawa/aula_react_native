@@ -5,8 +5,15 @@ import styles from './styles';
 
 function Index() {
 
-    const [valorEntrada, setValorEntrada] = useState('');
-    const [mensagem, setMensagem] = useState('Mensagem');
+    const [valorNome, setValorNome] = useState('');
+    const [valorSobrenome, setValorSobrenome] = useState('');
+    const [mensagem, setMensagem] = useState('Inserir o nome e sobrenome');
+
+    function Nome(){
+        setMensagem(valorNome +" " + valorSobrenome)
+        setValorNome('')
+        setValorSobrenome('')
+    }
 
     return(
         <View style={styles.container}>
@@ -14,22 +21,27 @@ function Index() {
 
             <Text style={styles.txtSaida}>{mensagem}</Text>
 
+            <Text style={styles.txtView}>Nome</Text>
             <TextInput
                 style={styles.txtEntrada}
-                onChangeText={(saida) => setValorEntrada(saida)}
-                value={valorEntrada}
+                onChangeText={(saida) => setValorNome(saida)}
+                value={valorNome}
+            />
+            <Text style={styles.txtView}>Sobrenome</Text>
+            <TextInput
+                style={styles.txtEntrada}
+                onChangeText={(saida) => setValorSobrenome(saida)}
+                value={valorSobrenome}
             />
 
             <TouchableOpacity 
                 style={styles.button}
                 onPress={() => {
-                    setMensagem(valorEntrada)
-                    setValorEntrada('')
+                    Nome()
                 }}
             >
-                <Text style={styles.textButton}>Exibir Mensagem</Text>
+                <Text style={styles.textButton}>Exibir Texto</Text>
             </TouchableOpacity>
-
         </View>
     );
 }

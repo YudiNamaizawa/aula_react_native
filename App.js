@@ -7,13 +7,14 @@ import Constants from 'expo-constants';
 import Apostila_003 from './components/apostila_003';
 import Apostila_004 from './components/apostila_004';
 import Apostila_005 from './components/apostila_005';
+import Apostila_006 from './components/apostila_006';
 
 const corApp = '#fff';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Apostila_005/>
+      <Apostila_004/>
       <StatusBar style={corApp === '#000' ? 'light' : 'dark'} />
     </View>
   );
